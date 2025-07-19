@@ -10,6 +10,7 @@ import Footer from "../foundations/footer/Footer";
 import JaZeAuth from "../../hooks/authentication/jazeAuth";
 import { ViewTitleProvider } from "../../contexts/ViewTitleContexts";
 import { useLocalStorage } from "../../hooks/utils/useLocalStorage";
+import {faRadio} from "@fortawesome/free-solid-svg-icons";
 
 function App() {
   const { getItem } = useLocalStorage();
@@ -33,11 +34,11 @@ function App() {
   return (
     <ViewTitleProvider>
       <ErrorBoundary>
-        <Header />
+        <Header header={"JaZeZ"} icon={faRadio} />
         <Router>
           <ViewConstructor />
         </Router>
-        <Footer />
+        <Footer footer={"Made by Juno!"}/>
       </ErrorBoundary>
     </ViewTitleProvider>
   );

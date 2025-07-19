@@ -8,8 +8,6 @@ main.env
 
 node_modules/.cache/default-development/2.pack
 node_modules/.cache/default-development/5.pack
-node_modules/.cache/default-development/2.pack
-node_modules/.cache/default-development/5.pack
 .DS_Store
 prod.env
 /.vs/jaze/FileContentIndex/01666b33-d586-42d9-b59d-4fa6ecd84973.vsidx
@@ -28,3 +26,4 @@ prod.env
 /.vs/jaze/FileContentIndex/907a8ea4-c46a-4074-a6e6-9239f780bef5.vsidx
 /.vs/jaze/FileContentIndex/972db0cb-a843-41eb-9f8b-1e65306eca1e.vsidx
 /.vs/jaze/FileContentIndex/d28bfafa-4cf7-4239-9a9d-edba813dbac4.vsidx
+/node_modules/
