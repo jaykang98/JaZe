@@ -103,5 +103,3 @@ const About: React.FC<ActivityConstructorProps> = () => {
         />
     );
 };
-
-export default About;
