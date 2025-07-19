@@ -1,17 +1,21 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faRadio } from "@fortawesome/free-solid-svg-icons";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {IconDefinition} from "@fortawesome/free-solid-svg-icons";
 
-const Header: React.FC = () => {
+interface HeaderProps {
+    header: string;
+    icon?: IconDefinition;
+}
+const Header: React.FC<HeaderProps> = ({header,icon}) => {
   return (
     <header>
       <h1>
         <FontAwesomeIcon
-          icon={faRadio}
+          icon={icon}
           style={{ color: "black" }}
           className="hdrIcon"
-        />{" "}
-        JaZe
+        />
+          {header}
       </h1>
     </header>
   );

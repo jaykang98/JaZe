@@ -1,8 +1,13 @@
 // Filename: Footer.tsx
 import React from "react";
 
-const Footer: React.FC = () => {
-  return <footer>Copyright 2024 J Kang</footer>;
+interface FooterProps {
+  footer: string;
+}
+
+const Footer: React.FC<FooterProps> = ({ footer }: FooterProps) => {
+  return <footer> {footer}
+  </footer>;
 };
 
 export default Footer;
