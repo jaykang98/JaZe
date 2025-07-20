@@ -58,10 +58,12 @@ const ViewFrame: React.FC<ViewFrameProps> = ({
         [styles.empty]: isContentEmpty,
       })}
     >
-      <ViewSection style={{ width: `${adjustedSplit}%` }}>
+      <ViewSection style={{ width: `${adjustedSplit}%`,
+        padding:10 }}>
         {firstChild}
       </ViewSection>
-      <ViewSection style={{ width: `${100 - adjustedSplit}%` }}>
+      <ViewSection style={{ width: `${100 - adjustedSplit}%`,
+        padding:10 }}>
         {secondChild}
       </ViewSection>
     </div>

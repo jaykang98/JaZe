@@ -15,6 +15,7 @@ const Header: React.FC<HeaderProps> = ({header,icon}) => {
           style={{ color: "black" }}
           className="hdrIcon"
         />
+          <span> </span>
           {header}
       </h1>
     </header>

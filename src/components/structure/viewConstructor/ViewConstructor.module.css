@@ -1,8 +1,10 @@
 .viewConstructor {
   display: flex;
+  min-height: 100vh;
 }
 .viewModuleConstructor {
   color: black;
+  min-height: 100vh;
   font-family: var(--font-family);
   width: 70vw;
   flex-grow: 1;

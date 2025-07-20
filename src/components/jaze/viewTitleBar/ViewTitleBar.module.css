@@ -2,8 +2,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 60px;
-    margin: 50px 0 50px;
+    max-height: 60px;
+    margin: 20px 0 20px;
     align-self: center;
     padding-bottom: 30px;
     font-size: xx-large;

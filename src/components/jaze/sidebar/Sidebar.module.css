@@ -1,23 +1,35 @@
 .sidebarButton {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+  user-select: none;
+  pointer-events: auto;
   text-decoration: none;
   font-size: xx-large;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-left:  10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   color: white;
   width: 100%;
+  align-content: flex-start;
+  border-radius: 10px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .sidebarButton:hover {
   background-color: black;
   color: white;
-  opacity: 0.5;
-  align-content: center;
+  opacity: 0.85;
+
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 450px) {
   .sidebarContainer {
     width: 100%;
-    height: auto;
+    min-height: 100%;
     flex-direction: row;
     overflow-x: hidden;
     padding: var(--default-padding) 0;

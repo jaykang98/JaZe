@@ -25,7 +25,10 @@ const DisplayGrid: React.FC<DisplayGridProps> = ({ viewFrames }) => {
 
   return (
     <>
-      <section style={{ display: "flex", flexDirection: "row" }}>
+      <section style={{
+        display: "flex",
+        flexDirection: "row"
+      }}>
         {viewFrames.map((frame, index) => (
           <ViewFrame
             key={index}
