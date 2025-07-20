@@ -17,7 +17,6 @@
   background-size: 200% 200%;
   animation: gradientLoop 5s ease infinite;
   padding: 25px 20px;
-  border: 1px black solid;
   border-radius: 30px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   color: navajowhite;
