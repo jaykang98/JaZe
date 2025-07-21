@@ -65,7 +65,7 @@ const Settings: React.FC<ActivityConstructorProps> = () => {
                 secondaryIcon: getItem("isDecrypted") ? faLock : faLockOpen,
             },
             {
-                displayLabel: "Change Theme",
+                displayLabel: "Theme",
                 action: toggleDarkMode,
                 actionLabel: getItem("isDarkMode") ? "Dark Mode" : "Light Mode",
                 icon: faPalette,
@@ -88,14 +88,14 @@ const Settings: React.FC<ActivityConstructorProps> = () => {
 
     const additionalSettings = [
         {
-            displayLabel: "Author Name",
+            displayLabel: "Author",
             action: null,
-            actionLabel: "J Kang",
+            actionLabel: "Juno Kang",
             icon: faPenNib,
             secondaryIcon: null,
         },
         {
-            displayLabel: "Current Version",
+            displayLabel: "Version",
             action: null,
             actionLabel: `JaZe ${process.env.REACT_APP_VER}`,
             icon: faCodeMerge,

@@ -162,10 +162,10 @@ const Tops: React.FC<ActivityConstructorProps> = () => {
                     {
                         content: (
                             <>
+                                <h1>of all time</h1>
                                 {renderItemContent(artistData, "artist")}
                                 {renderItemContent(artistData, "artist", true)}
-                                <h3>Your Top Artists</h3>
-                                <h1>of all time</h1>
+
                             </>
                         ),
                         viewWidth: 100,
@@ -173,10 +173,10 @@ const Tops: React.FC<ActivityConstructorProps> = () => {
                     {
                         content: (
                             <>
+                                <h1>of all time</h1>
                                 {renderItemContent(albumData, "album")}
                                 {renderItemContent(albumData, "album", true)}
-                                <h3>Your Top Albums</h3>
-                                <h1>of all time</h1>
+
                             </>
                         ),
                         viewWidth: 100,
@@ -189,10 +189,10 @@ const Tops: React.FC<ActivityConstructorProps> = () => {
                     {
                         content: (
                             <>
+                                <h1>of all time</h1>
                                 {renderItemContent(trackData, "track")}
                                 {renderItemContent(trackData, "track", true)}
-                                <h3>Your Top Tracks </h3>
-                                <h1>of all time</h1>
+
                             </>
                         ),
                         viewWidth: 100,
@@ -200,12 +200,12 @@ const Tops: React.FC<ActivityConstructorProps> = () => {
                     {
                         content: (
                             <>
+                                <h1>Information</h1>
+
                                 <div className={styles.albumContainer}>
                                     <UserCard key="userImage" src={userImage} alt="User" />
                                     {renderUserInfo()}
                                 </div>
-                                <h3>Your Profile</h3>
-                                <h1>Information</h1>
                             </>
                         ),
                         viewWidth: 100,

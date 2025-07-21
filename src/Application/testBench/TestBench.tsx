@@ -6,9 +6,8 @@ import { spotifySearch } from "../../hooks/dataManagement/search";
 
 const TestBench: React.FC<ActivityConstructorProps> = () => {
   const { setTitle } = useViewTitle();
-  const search = spotifySearch("album", "DAMN.");
   useEffect(() => {
-    setTitle("Test Bench");
+    setTitle("Home");
   }, [setTitle]);
 
   return (

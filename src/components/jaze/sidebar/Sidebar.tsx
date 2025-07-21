@@ -1,5 +1,5 @@
 import React from "react";
-import { faCog, faAward, faHammer, faHeadphones } from "@fortawesome/free-solid-svg-icons";
+import { faCog, faMailBulk, faHammer, faHeadphones, faPlayCircle, faImage, faHome } from "@fortawesome/free-solid-svg-icons";
 import styles from "./Sidebar.module.css";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -18,32 +18,41 @@ const SidebarButton = ({ label, path, icon }) => {
 
 const Sidebar = () => {
   const buttons = [
-    /* {
-      path: "/main",
+    {
+      path: "/Main",
       label: "Main",
       icon: faHome,
-    },*/
+    },
+
     {
-      path: "/tops",
-      label: "Tops",
-      icon: faAward,
+      path: "https://tv.jklmnopea.com/",
+      label: "Media",
+      icon: faPlayCircle,
+    },
+    {
+      path: "https://img.jklmnopea.com/",
+      label: "Images",
+      icon: faImage,
       },
-      {
-      path: "/Listen",
-          label: "Listen",
-      icon: faHeadphones,
+    {
+      path: "https://icloud.com/",
+      label: "Mail",
+      icon: faMailBulk,
+      },
+    {
+      path: "/form",
+      label: "Form",
+      icon: faHammer,
     },
     {
       path: "/settings",
       label: "Settings",
       icon: faCog,
     },
-    {
-      path: "/testBench",
-      label: "Test Bench",
-      icon: faHammer,
-    },
+
   ];
+
+
 
   return (
     <aside className={styles.sidebarContainer}>
