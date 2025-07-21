@@ -2,11 +2,11 @@ import React from "react";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {IconDefinition} from "@fortawesome/free-solid-svg-icons";
 
-interface HeaderProps {
+interface TitleProps {
     header: string;
     icon?: IconDefinition;
 }
-const Header: React.FC<HeaderProps> = ({header,icon}) => {
+const Title: React.FC<TitleProps> = ({header,icon}) => {
   return (
     <header>
       <h1>
@@ -22,4 +22,4 @@ const Header: React.FC<HeaderProps> = ({header,icon}) => {
   );
 };
 
-export default Header;
+export default Title;

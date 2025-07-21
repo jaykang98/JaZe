@@ -1,7 +1,9 @@
 import React, { ReactNode, createContext, useContext, useState } from "react";
 
-const ViewTitleContext = createContext<
-  { title: string; setTitle: (title: string) => void } | undefined
+const ViewTitleContext = createContext<{
+  title: string;
+  setTitle: (title: string) => void
+} | undefined
 >(undefined);
 
 export const ViewTitleProvider: React.FC<{ children: ReactNode }> = ({
